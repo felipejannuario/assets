@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Felipe Januario</title>
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/images/Felipe Januario logo (1).png" type="image/png">
+</head>
+
+<body>
+
+  <div class="mascara-formulario" onclick="esconderForm()"></div>
+
+
+  <header> <!--e uma tag semantica para uso epecifico tipo cabeçalho-->
+<h1 class="logo-inicio">Portfólio</h1>
+
+   <div class="hamburger" id="hamburger">
+    <span href="#home"></span>
+    <span href="#services"></span>
+    <span href="#projects"></span>
+    <span href="#about"></span>
+  </div>
+  
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a href="#home">
+        <i class="fa-solid fa-house"></i>
+        <span class="label">Home</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#services">
+        <i class="fa-brands fa-servicestack"></i>
+        <span class="label">Services</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#projects">
+        <i class="fa-solid fa-code"></i>
+        <span class="label">Projects</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#about">
+        <i class="fa-solid fa-user"></i>
+        <span class="label">About</span>
+      </a>
+    </li>
+  </ul>
+
+
+
+  </header>
+
+  <nav class="navbar" data-navbar>
+
+    <div class="navbar-top">
+      <a href="#" class="logo-nav">
+        <img src="img/images/logo-light.svg" width="64" height="24" alt="Felipe janurio">
+      </a>
+
+      <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+      </button>
+    </div>
+
+
+    <!-- home section -->
+    <section class="home" id="home">
+      <!-- LADO ESQUERDO -->
+      <div class="home-content">
+        <h3>Hi, I'm</h3>
+        <h1>Felipe Januario</h1>
+        <h3>Full-Stack <span>Developer</span> And it's <span>a pleasure to have you here!</span></h3>
+
+        <p>
+          <i class='bx bxs-quote-alt-left'></i>Sou Felipe Januario, desenvolvedor Fullstack apaixonado por criar
+          soluções inteligentes e eficientes. Trabalho com JavaScript, Node.js e bancos de dados. Tenho foco em
+          resultados, código limpo e aprendizado contínuo. Busco sempre evoluir como profissional, mantendo disciplina,
+          organização e espírito colaborativo em cada projeto que participo.<i class='bx bxs-quote-alt-right'></i>
+        </p>
+
+        <div class="social-container">
+
+          <div class="icon facebook">
+            <div class="tooltip">Facebook</div>
+            <span><i class="fab fa-facebook-f"></i></span>
+          </div>
+
+          <div class="icon youtube">
+            <div class="tooltip">YouTube</div>
+            <span><i class="fab fa-youtube"></i></span>
+          </div>
+
+          <div class="icon tiktok">
+            <div class="tooltip">TikTok</div>
+            <span><i class="fab fa-tiktok"></i></span>
+          </div>
+
+          <div class="icon instagram">
+            <div class="tooltip">Instagram</div>
+            <span><i class="fab fa-instagram"></i></span>
+          </div>
+
+          <div class="icon twitter">
+            <div class="tooltip">Twitter</div>
+            <span><i class="fab fa-twitter"></i></span>
+          </div>
+
+          <div class="icon github">
+            <div class="tooltip">GitHub</div>
+            <span><i class="fab fa-github"></i></span>
+          </div>
+
+          <div class="icon linkedin">
+            <div class="tooltip">LinkedIn</div>
+            <span><i class="fab fa-linkedin-in"></i></span>
+          </div>
+
+        </div>
+
+
+
+        <!-- Botão de abrir modal -->
+        <div class="btn-wrapper">
+          <button class="btn" id="openModalBtn">+ Informações</button>
+        </div>
+
+        <!-- Modal -->
+        <div id="curriculoModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Currículo de Felipe Januario</h2>
+            <p>"Aqui tem código, tem criatividade e tem muita vontade de fazer acontecer!"</p>
+            <embed src="/Files/Felipe Januario Desenvolvedor Fullstack React, Node.js, MongoDB.pdf"
+              type="application/pdf" width="100%" height="500px" />
+          </div>
+        </div>
+      </div>
+
+      <!-- LADO DIREITO -->
+      <div class="home-img">
+        <img src="img/images/Felipe  pose 2.png" alt="Profile picture">
+      </div>
+    </section>
+
+    <!--  /home section -->
+
+    <!-- <div class="skills" id="skills">
+      <h2>What <span>I Do?</span></h2>
+    </div>
+
+    <section class="skills-section">
+  
+  <div class="skills-container">
+
+    <div class="skill-box">
+      <i class="fab fa-html5"></i>
+      <div class="skill-info">
+        <h3>HTML5</h3>
+        <p>Experiência sólida em estruturação semântica e acessível.</p>
+        <div class="skill-bar">
+          <div class="skill-percentage" style="width: 90%"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-box">
+      <i class="fab fa-css3-alt"></i>
+      <div class="skill-info">
+        <h3>CSS3</h3>
+        <p>Design responsivo e animações criativas.</p>
+        <div class="skill-bar">
+          <div class="skill-percentage" style="width: 85%"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-box">
+      <i class="fab fa-js-square"></i>
+      <div class="skill-info">
+        <h3>JavaScript</h3>
+        <p>Lógica de programação e interatividade avançada.</p>
+        <div class="skill-bar">
+          <div class="skill-percentage" style="width: 80%"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-box">
+      <i class="fab fa-react"></i>
+      <div class="skill-info">
+        <h3>React</h3>
+        <p>Componentização e desenvolvimento SPA.</p>
+        <div class="skill-bar">
+          <div class="skill-percentage" style="width: 75%"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section> -->
+
+
+    <!-- titulo service -->
+    <div class="titulo" id="titulo">
+      <h2>Our <span>Services</span></h2>
+    </div>
+    <!-- /titulo service  -->
+
+    <!-- service section -->
+    <section class="services" id="services">
+
+      <div class="services-container">
+
+        <div class="services-box">
+          <i class='bx bx-code-alt'></i>
+          <h3>Web<br>Development</h3>
+          <p>
+            Desenvolvo sites modernos e responsivos, focados em performance, usabilidade e design profissional. Meu
+            objetivo é oferecer soluções personalizadas que fortaleçam a presença online do seu negócio, garantindo uma
+            experiência de navegação eficiente, intuitiva e de alta qualidade para seus usuários.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class='bx bx-mobile-alt'></i>
+          <h3>Mobile<br>Development</h3>
+          <p>
+            Desenvolvo aplicativos móveis nativos e híbridos que combinam performance, design intuitivo e funcionalidade
+            sob medida. Transformo ideias em soluções digitais que cabem na palma da mão, prontos para escalar seu
+            negócio e encantar usuários em qualquer plataforma.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class='bx bx-code-curly'></i>
+          <h3>Back-End<br>Development</h3>
+          <p>
+            Desenvolvo servidores e APIs robustas, escaláveis e seguras, utilizando tecnologias modernas e práticas de
+            programação eficientes. Meu foco é criar soluções inteligentes e eficientes que atendam às necessidades do
+            seu negócio, garantindo alta performance e qualidade no processamento de dados.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- /service section -->
+    <!-- projetos section -->
+
+    <div class="titulo" id="titulo">
+      <h2>My <span>Projects</span></h2>
+    </div>
+
+    <section class="services portfolio" id="portfolio">
+      <div class="services-container">
+
+        <div class="services-box card-projeto">
+          <div class="video-container">
+            <video class="video-bg" muted loop playsinline preload="metadata">
+              <source src="/img/video/Front.mp4" type="video/mp4">
+            </video>
+          </div>
+          <i class='bx bx-code-alt'></i>
+          <h3>Front-end</h3>
+          <p>
+            Desenvolvimento de sites, sistemas e aplicações responsivas focadas na melhor experiência do usuário.
+          </p>
+          <a href="projetos-web.html" class="btn">Ver Mais</a>
+        </div>
+
+        <div class="services-box card-projeto">
+          <div class="video-container">
+            <video class="video-bg" muted loop playsinline preload="metadata">
+              <source src="/img/video/mobile.mp4" type="video/mp4">
+            </video>
+          </div>
+          <i class='bx bx-mobile-alt'></i>
+          <h3>Mobile</h3>
+          <p>
+            Aplicativos e soluções mobile para diferentes plataformas, com foco em performance e usabilidade.
+          </p>
+          <a href="projetos-mobile.html" class="btn">Ver Mais</a>
+        </div>
+
+        <div class="services-box card-projeto">
+          <div class="video-container">
+            <video class="video-bg" muted loop playsinline preload="metadata">
+              <source src="/img/video/back.mp4" type="video/mp4">
+            </video>
+          </div>
+          <i class='bx bx-server'></i>
+          <h3>Back-End</h3>
+          <p>
+            APIs robustas, banco de dados eficientes e lógica de servidor bem estruturada para soluções escaláveis.
+          </p>
+          <a href="projetos-backend.html" class="btn">Ver Mais</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <form class="formulario-fale-conosco" action="https://formcarry.com/s/c2NY_nLdwf5" method="POST"
+      enctype="multipart/form-data">
+      <h2>Contact <span>Me!</span></h2>
+      <div class="input-box">
+        <input placeholder="Full Name" type="text" name="name">
+        <input placeholder="Phone Number" type="telefone" name="telefone">
+      </div>
+      <div class="input-box">
+        <input placeholder="Email" type="email" name="email">
+        <input placeholder="Subject" type="text" name="assunto">
+      </div>
+      <textarea cols="30" rows="8" placeholder="Message" nome="message"></textarea>
+      <button class="btn">Send Message</button>
+    </form>
+
+    <!-- <button onclick="mostrarForm()" class="btn">Send Message</button> -->
+    <!-- <a href="https://wa.me/5524993318148" target="_blank" class="btn">
+            <i class='bx bxl-whatsapp'></i>
+          </a> -->
+
+    <!-- /contact section -->
+
+    <!-- about section -->
+    <div class="titulo" id="titulo">
+      <h2>About <span>Me</span></h2>
+    </div>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="/img/images/Felipe pose1.png" alt="Profile picture">
+      </div>
+
+      <div class="about-content">
+
+        <h1>Full-Stack <span>Developer</span></h1>
+        <p>
+          Olá! Sou Felipe Januario, desenvolvedor Fullstack em constante evolução, com foco em JavaScript, backend e
+          bancos de dados. Minha missão é simples, mas poderosa: construir soluções que geram impacto real, enquanto
+          trilho o caminho para me tornar um desenvolvedor sênior de alto nível.
+          Sou movido por desafios e acredito que a tecnologia é uma ferramenta para transformar vidas — inclusive a
+          minha. Com disciplina, aprendizado contínuo e paixão pelo que faço, estou construindo não só um portfólio de
+          projetos, mas uma história de dedicação, resiliência e visão de futuro.
+          Atualmente, estou aprimorando minhas habilidades no curso Fullstack da DankiCode e fortalecendo meu portfólio
+          com projetos que demonstram domínio técnico e criatividade. Além disso, estou desenvolvendo um assistente
+          pessoal chamado Jabari, inspirado no Jarvis, porque acredito que o futuro é agora — e quero ser parte ativa na
+          construção dele.
+          Mais do que escrever códigos, meu compromisso é com a entrega de valor, a melhoria contínua e o equilíbrio
+          entre trabalho, família e fé. Meu objetivo? Criar soluções que façam sentido, que resolvam problemas de
+          verdade e que inspirem outras pessoas a acreditarem que tudo é possível com esforço, visão e atitude.
+          Vamos construir o futuro juntos?
+        </p>
+
+        <button onclick="mostrarForm()" class="btn">Send Message</button>
+      </div>
+    </section>
+
+    <!-- /about section -->
+
+    <!-- fundo com imagem (substitui o vídeo) -->
+    <div class="fundo-imagem"></div>
+
+
+    <!-- Footer -->
+    <footer
+      style="background-color: #0f172a; color: #f1f5f9; padding: 2rem 0; text-align: center; font-family: Arial, sans-serif;">
+      <div style="max-width: 1200px; margin: 0 auto;">
+        <p style="margin: 0; font-size: 1.2rem;">Copyright &copy; 2025 by &lt;Felipe Januario&gt;. All Rights Reserved.
+        </p>
+
+        <div style="margin-top: 1rem;">
+          <a href="https://www.linkedin.com/in/felipe-januario/" target="_blank"
+            style="color: #f1f5f9; margin: 0 10px; text-decoration: none;"><i class='bx bxl-linkedin'></i></a>
+          |
+          <a href="https://github.com/felipejannuario" target="_blank"
+            style="color: #f1f5f9; margin: 0 10px; text-decoration: none;"><i class='bx bxl-github'></i></a>
+          |
+          <a href="https://www.instagram.com/devfelipejanuario/"
+            style="color: #f1f5f9; margin: 0 10px; text-decoration: none;"><i class='bx bxl-instagram'></i></a>
+          |
+          <a href="https://wa.me/5524993318148" target="_blank"
+            style="color: #f1f5f9; margin: 0 10px; text-decoration: none;"><i class='bx bxl-whatsapp'></i></a>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.9rem; color: #94a3b8;">"Código limpo, café quente e sonhos grandes."
+        </p>
+      </div>
+    </footer>
+    <!-- Audio -->
+    <audio id="myAudio" autoplay loop>
+      <source src="" type="audio/mp3">
+    </audio>
+</body>
+<script src="script.js"></script>
+
+</html>
