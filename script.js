@@ -71,17 +71,12 @@ readMoreLinks.forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
     card.classList.toggle("expanded");
-  });
 
-  // Opcional: recolher quando o mouse sair do card
-  card.addEventListener("mouseleave", function () {
-    card.classList.remove("expanded");
+    link.textContent = card.classList.contains("expanded")
+      ? "Read Less"
+      : "Read More";
   });
 });
-
-link.textContent = card.classList.contains("expanded")
-  ? "Read Less"
-  : "Read More";
 
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
@@ -89,3 +84,20 @@ const navMenu = document.getElementById("nav-menu");
 hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("show");
 });
+
+function mostrarForm() {
+  form.style.left = "50%";
+  form.style.transform = "translateX(-50%)";
+  mascara.style.visibility = "visible";
+  mascara.style.opacity = "1";
+}
+
+function esconderForm() {
+  form.style.left = "-550px";
+  form.style.transform = "translateX(0)";
+  mascara.style.opacity = "0";
+  setTimeout(() => {
+    mascara.style.visibility = "hidden";
+  }, 500); // tempo igual ao transition
+}
+

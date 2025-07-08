@@ -7,9 +7,9 @@
   <title>Portfólio Felipe Januario</title>
   <!-- Box icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/images/Felipe Januario logo (1).png" type="image/png">
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/images/Felipe Januario logo (1).png" type="image/png">
 </head>
 
 <body>
@@ -18,43 +18,22 @@
 
 
   <header> <!--e uma tag semantica para uso epecifico tipo cabeçalho-->
-<h1 class="logo-inicio">Portfólio</h1>
+    <h1 class="logo-inicio">Portfólio</h1>
 
-   <div class="hamburger" id="hamburger">
-    <span href="#home"></span>
-    <span href="#services"></span>
-    <span href="#projects"></span>
-    <span href="#about"></span>
-  </div>
-  
-  <ul class="nav-menu">
-    <li class="nav-item">
-      <a href="#home">
-        <i class="fa-solid fa-house"></i>
-        <span class="label">Home</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="#services">
-        <i class="fa-brands fa-servicestack"></i>
-        <span class="label">Services</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="#projects">
-        <i class="fa-solid fa-code"></i>
-        <span class="label">Projects</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="#about">
-        <i class="fa-solid fa-user"></i>
-        <span class="label">About</span>
-      </a>
-    </li>
-  </ul>
+    <div class="hamburger" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
 
-
+    <ul class="nav-menu" id="nav-menu">
+      <li class="nav-item"><a href="#home"><i class="fa-solid fa-house"></i><span class="label">Home</span></a></li>
+      <li class="nav-item"><a href="#services"><i class="fa-brands fa-servicestack"></i><span
+            class="label">Services</span></a></li>
+      <li class="nav-item"><a href="#projects"><i class="fa-solid fa-code"></i><span class="label">Projects</span></a>
+      </li>
+      <li class="nav-item"><a href="#about"><i class="fa-solid fa-user"></i><span class="label">About</span></a></li>
+    </ul>
 
   </header>
 
@@ -210,46 +189,56 @@
 
     <!-- titulo service -->
     <div class="titulo" id="titulo">
-      <h2>Our <span>Services</span></h2>
+      <h2 id="services">Our <span>Services</span></h2>
     </div>
     <!-- /titulo service  -->
 
     <!-- service section -->
-    <section class="services" id="services">
+    <section class="services">
 
       <div class="services-container">
 
         <div class="services-box">
           <i class='bx bx-code-alt'></i>
-          <h3>Web<br>Development</h3>
-          <p>
-            Desenvolvo sites modernos e responsivos, focados em performance, usabilidade e design profissional. Meu
-            objetivo é oferecer soluções personalizadas que fortaleçam a presença online do seu negócio, garantindo uma
-            experiência de navegação eficiente, intuitiva e de alta qualidade para seus usuários.
+          <h3 class="h3-web">Web<br>Development</h3>
+          <p class="card-text">
+            Desenvolvo sites modernos e responsivos, focados em performance.
+            <span class="hidden-text">
+              &nbsp;usabilidade e design profissional. Meu
+              objetivo é oferecer soluções personalizadas que fortaleçam a presença online do seu negócio, garantindo
+              uma
+              experiência de navegação eficiente, intuitiva e de alta qualidade para seus usuários.
+            </span>
           </p>
-          <a href="#" class="btn">Read More</a>
+          <a href="#" class="btn read-more">Read More</a>
         </div>
 
         <div class="services-box">
           <i class='bx bx-mobile-alt'></i>
-          <h3>Mobile<br>Development</h3>
-          <p>
-            Desenvolvo aplicativos móveis nativos e híbridos que combinam performance, design intuitivo e funcionalidade
-            sob medida. Transformo ideias em soluções digitais que cabem na palma da mão, prontos para escalar seu
-            negócio e encantar usuários em qualquer plataforma.
+          <h3 class="h3-mobile">Mobile<br>Development</h3>
+          <p class="card-text">
+            Desenvolvo aplicativos móveis nativos e híbridos que combinam performance.
+            <span class="hidden-text">
+              &nbsp;design intuitivo e funcionalidade
+              sob medida. Transformo ideias em soluções digitais que cabem na palma da mão, prontos para escalar seu
+              negócio e encantar usuários em qualquer plataforma.
+            </span>
           </p>
-          <a href="#" class="btn">Read More</a>
+          <a href="#" class="btn read-more">Read More</a>
         </div>
 
         <div class="services-box">
           <i class='bx bx-code-curly'></i>
-          <h3>Back-End<br>Development</h3>
-          <p>
-            Desenvolvo servidores e APIs robustas, escaláveis e seguras, utilizando tecnologias modernas e práticas de
+          <h3 class="h3-backend">Back-End<br>Development</h3>
+          <p class="card-text">
+            Desenvolvo servidores e APIs robustas, escaláveis e seguras.
+            <span class="hidden-text">
+              &nbsp;utilizando tecnologias modernas e práticas de
             programação eficientes. Meu foco é criar soluções inteligentes e eficientes que atendam às necessidades do
             seu negócio, garantindo alta performance e qualidade no processamento de dados.
+            </span>
           </p>
-          <a href="#" class="btn">Read More</a>
+          <a href="#" class="btn read-more">Read More</a>
         </div>
 
       </div>
@@ -261,10 +250,10 @@
     <!-- projetos section -->
 
     <div class="titulo" id="titulo">
-      <h2>My <span>Projects</span></h2>
+      <h2 id="projects">My <span>Projects</span></h2>
     </div>
 
-    <section class="services portfolio" id="portfolio">
+    <section class="services portfolio">
       <div class="services-container">
 
         <div class="services-box card-projeto">
@@ -274,7 +263,7 @@
             </video>
           </div>
           <i class='bx bx-code-alt'></i>
-          <h3>Front-end</h3>
+          <h3 class="h3-web">Front-end</h3>
           <p>
             Desenvolvimento de sites, sistemas e aplicações responsivas focadas na melhor experiência do usuário.
           </p>
@@ -288,7 +277,7 @@
             </video>
           </div>
           <i class='bx bx-mobile-alt'></i>
-          <h3>Mobile</h3>
+          <h3 class="h3-mobile">Mobile</h3>
           <p>
             Aplicativos e soluções mobile para diferentes plataformas, com foco em performance e usabilidade.
           </p>
@@ -302,7 +291,7 @@
             </video>
           </div>
           <i class='bx bx-server'></i>
-          <h3>Back-End</h3>
+          <h3 class="h3-backend">Back-End</h3>
           <p>
             APIs robustas, banco de dados eficientes e lógica de servidor bem estruturada para soluções escaláveis.
           </p>
@@ -314,7 +303,7 @@
 
     <!-- contact section -->
     <form class="formulario-fale-conosco" action="https://formcarry.com/s/c2NY_nLdwf5" method="POST"
-      enctype="multipart/form-data">
+      enctype="multipart/form-data" target="_blank">
       <h2>Contact <span>Me!</span></h2>
       <div class="input-box">
         <input placeholder="Full Name" type="text" name="name">
@@ -324,7 +313,7 @@
         <input placeholder="Email" type="email" name="email">
         <input placeholder="Subject" type="text" name="assunto">
       </div>
-      <textarea cols="30" rows="8" placeholder="Message" nome="message"></textarea>
+      <textarea cols="30" rows="8" placeholder="Message" name="message"></textarea>
       <button class="btn">Send Message</button>
     </form>
 
@@ -337,10 +326,10 @@
 
     <!-- about section -->
     <div class="titulo" id="titulo">
-      <h2>About <span>Me</span></h2>
+      <h2 id="about">About <span>Me</span></h2>
     </div>
 
-    <section class="about" id="about">
+    <section class="about">
       <div class="about-img">
         <img src="/img/images/Felipe pose1.png" alt="Profile picture">
       </div>
