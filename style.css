@@ -68,12 +68,14 @@ header {
   left: 0;
   width: 100%;
   padding: 1rem 1rem;
-  background-color: transparent; /* ou var(--bg-color-01) bem discreto */
+  background-color: transparent;
+  /* ou var(--bg-color-01) bem discreto */
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  backdrop-filter: blur(10px); /* opcional: efeito vidro suave */
+  backdrop-filter: blur(10px);
+  /* opcional: efeito vidro suave */
 }
 
 .logo-nav {
@@ -125,7 +127,7 @@ header {
 }
 
 .nav-item a {
-  color: #000000; 
+  color: #000000;
   font-size: 1.5rem;
   text-decoration: none;
   display: flex;
@@ -269,15 +271,16 @@ header {
   /* Centraliza elementos inline como <a> */
 }
 
-.btn:hover, .bnt:hover {
+.btn:hover,
+.bnt:hover {
   background: var(--main-color);
   box-shadow: 0 0 20px var(--main-color),
-              0 0 80px var(--main-color),
-              0 0 120px var(--main-color),
-              0 0 240px var(--main-color);
+    0 0 80px var(--main-color),
+    0 0 120px var(--main-color),
+    0 0 240px var(--main-color);
   color: #000000;
   transition: .3s;
-  
+
 }
 
 /* =========================
@@ -327,7 +330,7 @@ header {
   transition: all 0.4s ease;
   padding: 0.5rem 1rem;
   -webkit-text-stroke: 1px black;
-  
+
 }
 
 .titulo-iluminado:hover {
@@ -335,28 +338,56 @@ header {
 }
 
 .services-box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  padding: 1.5rem;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 280px;
-  /* Garante largura mínima para scroll horizontal */
-  width: 300px;
-  background-color: var(--color-00);
-  border: solid 0.3rem var(--bg-color-01);
-  border-radius: 1.2rem;
-  padding: 2rem 1.5rem;
-  text-align: center;
-  transition: 0.5s ease;
-  min-height: 350PX;
-  /* você pode testar com 600px, 650px... */
-  height: 400px;
-  /* todos os cards terão essa altura */
+  justify-content: flex-end;
+  z-index: 1;
 }
+
+/* camada escura leve pra legibilidade */
+.services-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+.services-box * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Classes com as imagens */
+.bg-web {
+  background-image: url("img/web-development.png");
+}
+
+.bg-mobile {
+  background-image: url("img/mobile-development.png");
+}
+
+.bg-backend {
+  background-image: url("img/backend-development.png");
+}
+
+
+
 
 .hidden-text {
   display: none;
-  color: #ffffff !important; /* força branco puro */
+  color: #ffffff !important;
+  /* força branco puro */
   font-size: 0.9rem;
   margin-bottom: 1.5rem;
   text-align: justify;
@@ -384,11 +415,6 @@ header {
 .services-box h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-}
-
-.services-box h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
   font-weight: 800;
   background: url('img/images/fundo-preto-com-foco-de-luz_1017-27230.avif') center;
   background-size: cover;
@@ -397,7 +423,9 @@ header {
   color: transparent;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  text-shadow: 0 0 4px black;
 }
+
 
 .h3-web {
   border-bottom: 3px solid #009539;
@@ -461,6 +489,8 @@ header {
   text-align: justify;
   word-spacing: -0.2rem;
   letter-spacing: -0.02rem;
+  color: #ffffff;
+  text-shadow: 0 0 4px #000000;
 }
 
 .services-box .btn {
@@ -488,8 +518,10 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.3; /* Deixa discreto, ajusta se quiser */
-  pointer-events: none; /* Pra não interferir no hover */
+  opacity: 0.3;
+  /* Deixa discreto, ajusta se quiser */
+  pointer-events: none;
+  /* Pra não interferir no hover */
 }
 
 .card-projeto i,
@@ -498,7 +530,8 @@ header {
 .card-projeto a {
   position: relative;
   z-index: 1;
-  color: #fff; /* Ajuste para contraste */
+  color: #fff;
+  /* Ajuste para contraste */
 }
 
 .card-projeto:hover .video-bg {
@@ -526,7 +559,8 @@ header {
 }
 
 .hero {
-  background-color: #000; /* cor fallback */
+  background-color: #000;
+  /* cor fallback */
   background-image: url(./img/images/fundo-preto-com-foco-de-luz_1017-27230.avif);
   background-size: cover;
   background-position: center;
@@ -865,8 +899,13 @@ form textarea {
 }
 
 @keyframes fillBar {
-  from { width: 0; }
-  to { width: var(--width); }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: var(--width);
+  }
 }
 
 /* Responsivo: grid já adapta, mas ajuste extra */
@@ -876,7 +915,7 @@ form textarea {
   }
 }
 
-  /* === media queries === */
+/* === media queries === */
 
 /* extra small (xs): smartphone (portrait) */
 @media (min-width: 0px) {
@@ -969,33 +1008,38 @@ form textarea {
 /* small (sm): smartphone (landscape)*/
 
 @media (min-width: 576px) {
-  
+
   /* Header */
   header {
     padding: 1.5rem 2rem;
-    background-color: var(--color-02); /* já tem, mantido para teste */
+    background-color: var(--color-02);
+    /* já tem, mantido para teste */
   }
-  
-.home {
+
+  .home {
     padding-top: 6rem;
   }
 
   /* Home e About */
-  .home-img, .about-img {
+  .home-img,
+  .about-img {
     width: 60%;
     max-width: 60%;
   }
 
-  .home-content, .about-content {
+  .home-content,
+  .about-content {
     width: 80%;
     margin: 0 auto;
   }
 
-  .home-content h1, .about-content h1 {
+  .home-content h1,
+  .about-content h1 {
     font-size: 2.5rem;
   }
 
-  .home-content h3, .about-content h3 {
+  .home-content h3,
+  .about-content h3 {
     font-size: 1.8rem;
   }
 
@@ -1075,7 +1119,7 @@ form textarea {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  
+
   .home {
     padding-top: 9rem;
   }
