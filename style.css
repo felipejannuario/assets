@@ -339,8 +339,8 @@ header {
 
 .services-box {
   position: relative;
-  width: 300px;
-  height: 400px;
+  width: 500px;
+  height: 650px;
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -363,6 +363,12 @@ header {
   z-index: 0;
 }
 
+.services-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+
 .services-box * {
   position: relative;
   z-index: 1;
@@ -370,15 +376,15 @@ header {
 
 /* Classes com as imagens */
 .bg-web {
-  background-image: url("img/web-development.png");
+  background-image: url("img/images/web-development.png");
 }
 
 .bg-mobile {
-  background-image: url("img/mobile-development.png");
+  background-image: url("img/images/mobile-development.png");
 }
 
 .bg-backend {
-  background-image: url("img/backend-development.png");
+  background-image: url("img/images/backend-development.png");
 }
 
 
@@ -414,16 +420,15 @@ header {
 
 .services-box h3 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
   font-weight: 800;
-  background: url('img/images/fundo-preto-com-foco-de-luz_1017-27230.avif') center;
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  text-shadow: 0 0 4px black;
+  color: #ffffff; /* Legível direto */
+  border-bottom: 3px solid currentColor;
+  text-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.services-box h3:hover {
+  color: #00ffcc; /* ou cor de destaque como #009539 */
 }
 
 
