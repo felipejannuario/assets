@@ -78,12 +78,13 @@ readMoreLinks.forEach((link) => {
   });
 });
 
-const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 
-hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
+menu.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
 });
+
 
 function mostrarForm() {
   form.style.left = "50%";

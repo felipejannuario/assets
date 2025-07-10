@@ -1099,10 +1099,24 @@ form textarea {
 
 
 /* medium (md): tablet */
-@media (min-width: 768px) {
-  .menu-hamburguer {
-    display: none;
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
   }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
 
   .portifolio-container {
     display: grid;
