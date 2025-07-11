@@ -310,14 +310,14 @@ header {
 }
 
 .services {
-  padding: 4rem 1rem;
+  padding: 15rem 1rem 1rem 1rem; /* top right bottom left */
   background-color: transparent;
   text-align: center;
 }
 
 .services h2 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   color: #fff;
 }
 
@@ -389,7 +389,7 @@ header {
 ========================= */
 
 .project-section {
-  padding: 4rem 1rem;
+  padding: 15rem 1rem;
   background-color: transparent;
   text-align: center;
 }
@@ -1287,3 +1287,4 @@ form textarea {
   font-size: 0.9rem;
   color: #94a3b8;
 }
+
