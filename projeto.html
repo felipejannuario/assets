@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meus Projetos | Felipe Januário</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="projeto.css" />
+</head>
+<body>
+
+  <a href="index.html" class="voltar-btn">
+    <i class="fa-solid fa-arrow-left"></i> Voltar
+  </a>
+
+  <header>
+    <h1>Meus Projetos</h1>
+    <nav>
+      <button data-filter="all" class="active">Todos</button>
+      <button data-filter="web">Web</button>
+      <button data-filter="mobile">Mobile</button>
+      <button data-filter="backend">Back-End</button>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- Web Projects -->
+    <section class="projects-section" data-category="web">
+      <h2>Projetos Web</h2>
+      <div class="projects-container">
+        <article class="project-card">
+          <h3>Irmãos Brother</h3>
+          <p>Hospedado no Netlify</p>
+          <a href="https://adorable-pasca-d3d6b0.netlify.app/" target="_blank" rel="noopener noreferrer">Acessar Site</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Conversor de Moedas</h3>
+          <p>Hospedado no Netlify</p>
+          <a href="https://conversor-de-moedasx.netlify.app/" target="_blank" rel="noopener noreferrer">Acessar Site</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Loja MKS</h3>
+          <p>Hospedado no Netlify</p>
+          <a href="https://loja-mks-fj.netlify.app/" target="_blank" rel="noopener noreferrer">Acessar Site</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Starbucks</h3>
+          <p>Hospedado no Netlify</p>
+          <a href="https://lojastar-bucks.netlify.app/" target="_blank" rel="noopener noreferrer">Acessar Site</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Calculadora</h3>
+          <p>Hospedado no Netlify</p>
+          <a href="https://dev-sorteador.netlify.app/" target="_blank" rel="noopener noreferrer">Acessar Site</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Dev Sorteador</h3>
+          <p>Hospedado no Netlify</p>
+          <a href="https://dev-sorteador.netlify.app/" target="_blank" rel="noopener noreferrer">Acessar Site</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Jokemp</h3>
+          <p>Hospedado no Netlify</p>
+          <a href="https://jokemp.netlify.app/" target="_blank" rel="noopener noreferrer">Acessar Site</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Tarefa Dia a Dia</h3>
+          <p>Hospedado no Netlify</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Acessar Site</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Pokebusca</h3>
+          <p>Hospedado no Netlify</p>
+          <a href="https://pokebuscavr.netlify.app/" target="_blank" rel="noopener noreferrer">Acessar Site</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Mobile Projects -->
+    <section class="projects-section" data-category="mobile" style="display:none">
+      <h2>Projetos Mobile</h2>
+      <div class="projects-container">
+        <!-- Coloca os projetos mobile aqui -->
+        <p>Ainda não há projetos mobile cadastrados.</p>
+      </div>
+    </section>
+
+    <!-- Back-End Projects -->
+    <section class="projects-section" data-category="backend" style="display:none">
+      <h2>Projetos Back-End</h2>
+      <div class="projects-container">
+        <!-- Coloca os projetos backend aqui -->
+        <p>Ainda não há projetos back-end cadastrados.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="projeto.js"></script>
+</body>
+</html>

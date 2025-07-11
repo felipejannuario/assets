@@ -78,11 +78,11 @@ readMoreLinks.forEach((link) => {
   });
 });
 
-const menu = document.getElementById("hamburger");
+const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 
-menu.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
 });
 
 
@@ -102,3 +102,17 @@ function esconderForm() {
   }, 500); // tempo igual ao transition
 }
 
+  const projectCards = document.querySelectorAll('.project-card');
+
+  projectCards.forEach(card => {
+    const video = card.querySelector('.project-card-video');
+
+    card.addEventListener('mouseenter', () => {
+      video.play();
+    });
+
+    card.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
