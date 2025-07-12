@@ -1,0 +1,47 @@
+/meu-projeto
+├── index.html
+├── README.md
+├── LICENSE
+├── .gitignore   <--- aqui, na raiz
+├── /css
+├── /js
+└── /assets
+
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# VS Code
+.vscode/
+
+# Mac system files
+.DS_Store
+
+# Build folders
+dist/
+build/
+
+# Optional npm cache
+.npm/
+
+# Optional Yarn cache
+.yarn-cache/
+
+# Dependency directories
+jspm_packages/
+
+# Optional coverage directory used by tools like istanbul
+coverage/
+
+# JetBrains IDEs
+.idea/
+
+# Others
+*.swp
