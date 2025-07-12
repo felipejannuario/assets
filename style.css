@@ -1288,3 +1288,30 @@ form textarea {
   color: #94a3b8;
 }
 
+.home, .about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .home, .about {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-img, .about-img {
+    max-width: 90%;
+    margin-top: 2rem;
+  }
+
+  .home-content, .about-content {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
